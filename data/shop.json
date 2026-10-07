@@ -1,0 +1,54 @@
+[
+  {
+    "id": "hat_wizard",
+    "name": "Шляпа волшебника",
+    "description": "Стильно и мудро.",
+    "price": 50,
+    "item_type": "cosmetic",
+    "required_level": 2
+  },
+  {
+    "id": "potion_heal",
+    "name": "Зелье лечения",
+    "description": "Восстанавливает 30 HP",
+    "price": 30,
+    "item_type": "consumable",
+    "effect": "heal",
+    "value": 30
+  },
+  {
+    "id": "amulet_shield",
+    "name": "Амулет защиты",
+    "description": "Следующий пропуск не ударит по HP",
+    "price": 100,
+    "item_type": "consumable",
+    "effect": "shield",
+    "value": 1
+  },
+  {
+    "id": "freeze_streak",
+    "name": "Заморозка streak",
+    "description": "Сохранить streak на 1 день",
+    "price": 40,
+    "item_type": "consumable",
+    "effect": "freeze",
+    "value": 1
+  },
+  {
+    "id": "double_xp",
+    "name": "Свиток двойного XP",
+    "description": "Следующая привычка x2 XP",
+    "price": 60,
+    "item_type": "consumable",
+    "effect": "double_xp",
+    "value": 2
+  },
+  {
+    "id": "pet_cat",
+    "name": "Кот-компаньон",
+    "description": "Мурчит рядом. +5 к настроению.",
+    "price": 200,
+    "item_type": "cosmetic",
+    "required_level": 3
+  }
+]

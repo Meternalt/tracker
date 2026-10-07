@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Habit Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RPG Habit Tracker</h1>
+
+        <div class="character-card">
+            <h2 id="char-name">Hero</h2>
+            <p>Уровень: <span id="level">1</span></p>
+
+            <div class="bar">
+                <label>HP</label>
+                <div class="bar-bg">
+                    <div class="bar-fill hp" id="hp-bar"></div>
+                </div>
+                <span id="hp-text">100 / 100</span>
+            </div>
+
+            <div class="bar">
+                <label>XP</label>
+                <div class="bar-bg">
+                    <div class="bar-fill xp" id="xp-bar"></div>
+                </div>
+                <span id="xp-text">0 / 100</span>
+            </div>
+
+            <p>Золото: <span id="gold">0</span></p>
+            <p>Заморозки: <span id="freeze">3</span></p>
+        </div>
+
+        <h2>Привычки</h2>
+        <ul id="habits-list"></ul>
+
+        <div class="add-habit">
+            <input type="text" id="new-habit-name" placeholder="Название">
+            <select id="new-habit-diff">
+                <option value="1">Легко (10 XP)</option>
+                <option value="2" selected>Средне (15 XP)</option>
+                <option value="3">Сложно (25 XP)</option>
+                <option value="4">Эпично (50 XP)</option>
+            </select>
+            <button onclick="addHabit()">Добавить</button>
+        </div>
+
+        <button onclick="saveGame()">Сохранить</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
